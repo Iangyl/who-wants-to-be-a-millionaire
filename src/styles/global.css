@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.root {
+  /* blue colors */
+  --royal-blue-col: #2869E8;
+  --cornflower-blue-col: #5387ED;
+  --jordy-blue-col: #7EA5F1;
+  --perano-col: #A9C3F6;
+
+  /* green colors */
+  --fern-col: #51B366;
+  --panache-col: #F6FBF7;
+
+  /* red colors */
+  --mern-col: #EC5974;
+  --wisp-pink-col: #FEF7F8;
+
+  /* black colors */
+  --shark-col: #1C1C21;
+  --mischka-col: #D0D0D8;
+  --athens-gray: #F5F5F7;
+
+  /* font */
+  --font: 'Inter', sans-serif;
+
+  font-family: var(--font);
+}
