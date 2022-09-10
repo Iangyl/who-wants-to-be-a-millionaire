@@ -1,7 +1,8 @@
 import React from 'react';
+import GeneralButton from 'common/components/GeneralButton';
 
 function App() {
-  return <div className="App">Hello world!</div>;
+  return <GeneralButton />;
 }
 
 export default App;
