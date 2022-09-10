@@ -1,38 +1,11 @@
-# Getting Started Template
+# Who Wants to Be a Millionaire?
 
-## Available Scripts
+## General description
 
-In the project directory, you can run:
+Who Wants to Be a Millionaire? is an international television game show franchise of British origin, created by David Briggs, Mike Whitehill and Steven Knight. In its format, currently owned and licensed by Sony Pictures Television, contestants tackle a series of multiple-choice questions to win large cash prizes in a format that twists on many game show genre conventions – only one contestant plays at a time, similar to radio quizzes; contestants are given the question before deciding whether to answer, and have no time limit to answer questions; and the amount offered increases as they tackle questions that become increasingly difficult. The maximum cash prize offered in most versions of the format is an aspirational value in local currency, such as one million pounds in the U.K. or 70 million rupees (7 crore) in India.
 
-### `npm start`
+## Gameplay
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A group of contestants on each episode play a preliminary round called "Fastest Finger First". All are given a question by the host and four answers which must be placed within a particular order; in the first season of the original version (1998) and the first four seasons of the Australian version (1999–2002), contestants have to answer a multiple-choice question. If any contestants are visually impaired, the host reads the question and four choices all at once, then repeats the choices after the music for the round begins. The contestant who answers correctly in the fastest time goes on to play the main game. In the event that no one gets the question right, another question is given; if two or more contestants answer correctly but with the same time, they are given a tie-breaker to determine who will move on. This round is only used when a new contestant is being chosen to play the main round, and can be played more than once in an episode among those remaining within the group seeking to play the main game. In celebrity editions, the round is not used; celebrities automatically take part in the main game.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm lint`
-
-Launches the lint runner and fix the mistakes.\
-See the section about [running linter](https://eslint.org/) for more information.
-
-### `npm format`
-
-Launches the prettier runner and format the code.\
-See the section about [running prettier](https://prettier.io/) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once a contestant enters the main game, they are asked increasingly difficult general knowledge questions by the host. Each features four possible answers, to which the contestant must give the correct answer. Doing so wins them a certain amount of money, with tackling more difficult questions increasing their prize fund. During their game, the player has a set of lifelines that they may use only once to help them with a question, as well as two "safety nets" – if a contestant gets a question wrong, but had reached a designated cash value during their game, they will leave with that amount as their prize. While the first few questions are generally easy, subsequent ones might prompt the host to ask if the answer they gave is their "final answer" – if it is, then it is locked in and cannot be changed. If a contestant feels unsure about an answer and does not wish to play on, they can walk away with the money they have won, to which the host will ask them to confirm this as their final decision; in such cases, the host will usually ask them to state what answer they would have gone for, and reveal if it would have been correct or incorrect.
