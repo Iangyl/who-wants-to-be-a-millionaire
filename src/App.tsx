@@ -1,8 +1,8 @@
 import React from 'react';
-import GeneralButton from 'common/components/GeneralButton';
+import AnswerButton from 'common/components/AnswerButton';
 
 function App() {
-  return <GeneralButton />;
+  return <AnswerButton value="Inactive" letterId="A" onClick={console.log} />;
 }
 
 export default App;

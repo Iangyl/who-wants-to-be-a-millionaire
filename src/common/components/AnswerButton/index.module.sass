@@ -1,0 +1,87 @@
+.inactive
+	--color: var(--mischka-col)
+	--bg-color: white
+	--hover-col: var(--royal-blue-col)
+.correct
+	--color: var(--fern-low-col)
+	--bg-color: var(--fern-low-col)
+	--hover-col: var(--fern-low-col)
+.incorrect
+	--color: var(--mern-low-col)
+	--bg-color: var(--mern-low-col)
+	--hover-col: var(--mern-low-col)
+
+.AnswerButton
+	display: flex
+	cursor: pointer
+
+	.content
+		width: 405px
+		padding: 24.5px 32px
+		border-radius: 8px
+		position: relative
+		z-index: 99
+		text-align: left
+		line-height: 30px
+		filter: drop-shadow(1px 1px 0px var(--color)) drop-shadow(-1px 1px 0px var(--color)) drop-shadow(-1px -1px 0px var(--color)) drop-shadow(1px -1px 0px var(--color))
+		transition: 1s
+		background-color: var(--bg-color)
+
+		span
+			font-size: 20px
+			&:first-child
+				color: var(--royal-blue-col)
+				margin-right: 8px
+			&:last-child
+				color: var(--shark-col)
+
+		&:before
+			content: ''
+			width: 0px
+			height: 73.5px
+			position: absolute
+			border-style: solid
+			border-width: 35px 25px 35px 0
+			border-color: transparent var(--bg-color) transparent transparent
+			margin-left: -56px
+			margin-top: -21.5px
+			transition: 1s
+
+		&:after
+			content: ''
+			width: 0
+			height: 73.5px
+			position: absolute
+			border-style: solid
+			border-width: 35px 0 35px 25px
+			border-color: transparent transparent transparent var(--bg-color)
+			margin-left: 277px
+			margin-top: -21.5px
+			transition: 1s
+
+		&:hover
+			filter: drop-shadow(1px 1px 1px var(--hover-col)) drop-shadow(0px 1px 0px var(--hover-col)) drop-shadow(-1px -1px 0px var(--hover-col)) drop-shadow(1px -1px 0px var(--hover-col))
+
+		&:hover
+			color: yellow
+
+		&:hover + .decoration
+			background: var(--hover-col)
+
+		&:hover
+			&:after
+				filter: drop-shadow(0px 0px 0px var(--hover-col)) drop-shadow(0px 0px 0px var(--hover-col)) drop-shadow(0px 0px 0px var(--hover-col)) drop-shadow(0px 0px 0px var(--hover-col))
+
+		&:hover
+			&:before
+				filter: drop-shadow(0px 0px 0px var(--hover-col)) drop-shadow(0px 0px 0px var(--hover-col)) drop-shadow(0px 0px 0px var(--hover-col)) drop-shadow(0px 0px 0px var(--hover-col))
+
+	.decoration
+		width: 500px
+		height: 2px
+		background: var(--color)
+		position: absolute
+		margin-left: -47px
+		z-index: 1
+		align-self: center
+		transition: 1s
