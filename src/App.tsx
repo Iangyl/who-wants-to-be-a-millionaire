@@ -1,8 +1,8 @@
 import React from 'react';
-import AnswerButton from 'common/components/AnswerButton';
+import PrizeItem from 'common/components/PrizeItem';
 
 function App() {
-  return <AnswerButton value="Inactive" letterId="A" onClick={console.log} />;
+  return <PrizeItem value={10000} />;
 }
 
 export default App;
