@@ -1,8 +1,8 @@
 import React from 'react';
-import GeneralButton from 'common/components/GeneralButton';
+import PrizeItem from 'common/components/PrizeItem';
 
 function App() {
-  return <GeneralButton />;
+  return <PrizeItem value={10000} />;
 }
 
 export default App;

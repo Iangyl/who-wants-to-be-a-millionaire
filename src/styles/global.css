@@ -9,10 +9,12 @@
 
   /* green colors */
   --fern-col: #51B366;
+  --fern-low-col: rgba(81, 179, 102, 0.05);
   --panache-col: #F6FBF7;
 
   /* red colors */
   --mern-col: #EC5974;
+  --mern-low-col: rgba(236, 89, 116, 0.05);
   --wisp-pink-col: #FEF7F8;
 
   /* black colors */
