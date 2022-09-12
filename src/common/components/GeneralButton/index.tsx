@@ -1,12 +1,12 @@
 import React from 'react';
-import { data } from './mock-data';
+import { IGeneralButton } from './index.types';
 
 import styles from './index.module.sass';
 
-const GeneralButton = () => {
+const GeneralButton: React.FC<IGeneralButton> = ({ value, onClick }) => {
   return (
-    <button type="button" className={styles.GeneralButton}>
-      <p>{data.inactive}</p>
+    <button type="button" className={styles.GeneralButton} onClick={onClick}>
+      <p>{value}</p>
     </button>
   );
 };

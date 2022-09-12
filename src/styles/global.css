@@ -21,9 +21,16 @@
   --shark-col: #1C1C21;
   --mischka-col: #D0D0D8;
   --athens-gray: #F5F5F7;
+  --mercury: #E5E5E5;
 
   /* font */
   --font: 'Inter', sans-serif;
 
   font-family: var(--font);
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }

@@ -16,11 +16,8 @@ const AnswerButton: React.FC<IAnswerButton> = ({
       className={classNames(styles[status], styles.AnswerButton)}
       onClick={() => onClick(letterId)}
     >
-      <div className={styles.content}>
-        <span>{letterId}</span>
-        <span>{value}</span>
-      </div>
-      <div className={styles.decoration}></div>
+      <span>{letterId}</span>
+      <span>{value}</span>
     </button>
   );
 };
