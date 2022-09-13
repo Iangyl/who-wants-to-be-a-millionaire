@@ -1,0 +1,331 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "question": "What era has a characteristic feature of appearance of the first ceramic dishes:",
+      "answers": [
+        {
+          "letterId": "A",
+          "value": "Paleolithic",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "Mesolithic",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "Eneolithic",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "Neolithic",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "What army was beaten by Prince Danylo Halytsky near Dorogychyn in 1238",
+      "answers": [
+        {
+          "letterId": "A",
+          "value": "mongolian",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "hungarian",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "polish",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "crusaders",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question": "What social stratum made up the vast majority of the population of Kyivan Rus in the 9th–12th centuries?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "citizen",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "boyars",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "peasants",
+          "isCorrect": true
+        },
+        {
+          "letterId": "D",
+          "value": "military",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Whose form of economy is filvarok?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "cossacks",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "peasants",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "citizen",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "nobility",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "question": "The uprising of the Chernihiv regiment at the end of 1825 and the beginning of 1826 was prepared by:",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "masonic lodge \"Love of Truth\".",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "Cyril and Methodius brotherhood",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "polish patriotic society",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "Southern society of decambrists.",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "question": "One of the leading industries in the western Ukrainian lands at the beginning of the 20th century was:",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "coal",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "chemical",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "oil production",
+          "isCorrect": true
+        },
+        {
+          "letterId": "D",
+          "value": "metallurgical",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "question": "In what year did the Ukrainian SSR become a part of the USSR?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "1919 y.",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "1920 y.",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "1921 y.",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "1922 y.",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "question": "S. Efremov became the victim of which repressive action?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "cases of the \"Union for the Liberation of Ukraine\"",
+          "isCorrect": true
+        },
+        {
+          "letterId": "B",
+          "value": "\"Mine case\"",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "holodomor",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "\"Law of five ears of corn\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "question": "When was liberated the entire territory of Ukraine from the German occupiers and their allies?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "November 6, 1943",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "February 17, 1944",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "October 28, 1944",
+          "isCorrect": true
+        },
+        {
+          "letterId": "D",
+          "value": "May 9, 1945",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "question": "When the practice of \"political rehabilitation\" first entered the life of Soviet society?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "in period of \"rebuilding\"",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "in period of \"thaws\"",
+          "isCorrect": true
+        },
+        {
+          "letterId": "C",
+          "value": "in period of \"stagnation\"",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "in period of \"reconstruction\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "question": "What was on December 6, 1991?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "Ukraine's acquisition of membership in the Council of Europe",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "election of the first President of Ukraine",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "adoption of the Constitution of Ukraine",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "establishment of the Armed Forces of Ukraine",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "question": "What era characteristic was the development of new material for the manufacture of tools - copper, the establishment of reproductive forms of management?",
+      "answers": [
+       {
+          "letterId": "A",
+          "value": "Paleolithic",
+          "isCorrect": false
+        },
+        {
+          "letterId": "B",
+          "value": "Mesolithic",
+          "isCorrect": false
+        },
+        {
+          "letterId": "C",
+          "value": "Neolithic",
+          "isCorrect": false
+        },
+        {
+          "letterId": "D",
+          "value": "Eneolithic",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "prizes": [
+    "1000000",
+    "500000",
+    "250000",
+    "125000",
+    "64000",
+    "32000",
+    "16000",
+    "8000",
+    "4000",
+    "2000",
+    "1000",
+    "500"
+  ],
+  "currency": "USD"
+}
