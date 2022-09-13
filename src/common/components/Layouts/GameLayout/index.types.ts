@@ -1,5 +1,5 @@
 export interface IGameLayout {
-  children: React.ReactElement[];
+  children: JSX.Element[] | JSX.Element;
   question: string;
   prize?: number[];
 }

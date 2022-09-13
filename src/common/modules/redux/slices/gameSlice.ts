@@ -9,6 +9,8 @@ interface IGameData {
   currency: string;
   prizes: string[];
   questions: Datum[];
+  currentQuestion?: Datum;
+  questionIndex: number;
   finishStatus: Status;
   score: number;
 }
@@ -19,6 +21,7 @@ const initialState: IGameData = {
   questions: [],
   finishStatus: 'default',
   score: 0,
+  questionIndex: 0,
 };
 
 export const gameSlice = createSlice({
@@ -27,11 +30,14 @@ export const gameSlice = createSlice({
   reducers: {
     loadData: (
       state,
-      action: PayloadAction<Omit<IGameData, 'finishStatus' | 'score'>>
+      action: PayloadAction<
+        Omit<IGameData, 'score' | 'finishStatus' | 'questionIndex'>
+      >
     ) => {
       state.currency = action.payload.currency;
       state.prizes = action.payload.prizes;
       state.questions = action.payload.questions;
+      state.currentQuestion = action.payload.questions[0];
     },
     updateScore: (state, action: PayloadAction<number>) => {
       state.score += action.payload;
@@ -42,11 +48,18 @@ export const gameSlice = createSlice({
     reset: (state) => {
       state.score = 0;
       state.finishStatus = 'default';
+      state.questionIndex = 0;
+    },
+    nextQuestion: (state) => {
+      const index = state.questionIndex + 1;
+      state.questionIndex = index;
+      state.currentQuestion = state.questions[index];
     },
   },
 });
 
-export const { loadData, updateScore, updateStatus, reset } = gameSlice.actions;
+export const { loadData, updateScore, updateStatus, reset, nextQuestion } =
+  gameSlice.actions;
 
 export const selectGame = (state: RootState) => state.game;
 
