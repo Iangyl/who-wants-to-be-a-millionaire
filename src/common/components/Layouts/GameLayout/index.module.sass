@@ -4,7 +4,7 @@
 	display: flex
 	background-color: var(--mercury)
 	.content
-		width: calc(100% - 18%)
+		width: calc(100% - 376px)
 		margin-left: 80px
 		padding-top: 133px
 		.question
@@ -17,7 +17,7 @@
 			column-gap: 80px
 			row-gap: 32px
 	.aside
-		width: 18%
+		width: 376px
 		background-color: white
 		height: 100vh
 		padding-top: 12%
@@ -25,3 +25,21 @@
 			display: flex
 			flex-direction: column
 			gap: 8px
+	@media screen and (max-width: 2560px)
+		.content
+			.answers
+				grid-template-columns: repeat(2, 1fr)
+	@media screen and (max-width: 1440px)
+		.content
+			.answers
+				grid-template-columns: repeat(2, 422px)
+	@media screen and (max-width: 1024px)
+		.content
+			margin-left: 20px
+			.answers
+				grid-template-columns: repeat(2, 252px)
+	@media screen and (max-width: 768px)
+		.content
+			margin-left: 20px
+			.answers
+				grid-template-columns: 1fr

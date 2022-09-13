@@ -10,12 +10,13 @@ const AnswerButton: React.FC<IAnswerButton> = ({
   isCorrect,
   onClick,
 }) => {
-  const [status, setStatus] = React.useState('inactive');
+  const [status, setStatus] = React.useState<string>('inactive');
 
   const handleClick = () => {
     onClick(isCorrect);
     setStatus(isCorrect ? 'correct' : 'incorrect');
   };
+
   return (
     <button
       type="button"
