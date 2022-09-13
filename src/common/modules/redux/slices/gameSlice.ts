@@ -4,10 +4,16 @@ import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
 export type Status = 'win' | 'lose' | 'default';
+export type PrizeStatus = 'active' | 'next' | 'passed';
+
+export interface IPrize {
+  value: string | number;
+  status: PrizeStatus;
+}
 
 interface IGameData {
   currency: string;
-  prizes: string[];
+  prizes: IPrize[];
   questions: Datum[];
   currentQuestion?: Datum;
   questionIndex: number;
@@ -38,6 +44,7 @@ export const gameSlice = createSlice({
       state.prizes = action.payload.prizes;
       state.questions = action.payload.questions;
       state.currentQuestion = action.payload.questions[0];
+      state.prizes[state.prizes.length - 1].status = 'active';
     },
     updateScore: (state, action: PayloadAction<number>) => {
       state.score += action.payload;
@@ -49,11 +56,25 @@ export const gameSlice = createSlice({
       state.score = 0;
       state.finishStatus = 'default';
       state.questionIndex = 0;
+      state.currentQuestion = state.questions[0];
+      state.prizes = state.prizes.map((prize, idx) => {
+        if (idx === state.prizes.length - 1) {
+          return { ...prize, status: 'active' };
+        }
+        return { ...prize, status: 'next' };
+      });
     },
     nextQuestion: (state) => {
       const index = state.questionIndex + 1;
-      state.questionIndex = index;
-      state.currentQuestion = state.questions[index];
+      if (index === state.questions.length - 1) {
+        state.finishStatus = 'win';
+      } else {
+        state.questionIndex = index;
+        state.currentQuestion = state.questions[index];
+        state.prizes[state.prizes.length - 1 - index].status = 'active';
+        state.prizes[state.prizes.length - index].status = 'passed';
+        state.score += +state.prizes[state.prizes.length - index].value;
+      }
     },
   },
 });

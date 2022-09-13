@@ -32,7 +32,7 @@ function GameArea() {
   return (
     <GameLayout
       question={state?.currentQuestion?.question ?? 'Some question?'}
-      prize={state?.prizes.map((prize) => Number(prize))}
+      prize={state?.prizes}
     >
       {state?.currentQuestion?.answers?.map((answer: Answer) => (
         <AnswerButton

@@ -13,8 +13,12 @@ const GameLayout: React.FC<IGameLayout> = ({ children, question, prize }) => {
       </div>
       <aside className={styles.aside}>
         <ul>
-          {prize?.map((item: number) => (
-            <PrizeItem key={item} value={item} />
+          {prize?.map((item) => (
+            <PrizeItem
+              key={item.value}
+              value={item.value}
+              status={item.status}
+            />
           ))}
         </ul>
       </aside>
