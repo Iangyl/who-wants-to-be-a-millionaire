@@ -1,66 +1,23 @@
 .passed
-  --color: var(--mischka-col)
-  --font-color: var(--mischka-col)
-  --bg-color: white
+	--background: url('../../assets/prizeInactive.svg')
+	--color: var(--mischka-col)
 .active
-  --color: var(--royal-blue-col)
-  --font-color: var(--royal-blue-col)
-  --bg-color: white
+	--background: url('../../assets/prizeCurrent.svg')
+	--color: var(--royal-blue-col)
 .next
-  --color: var(--mischka-col)
-  --font-color: var(--shark-col)
-  --bg-color: white
+	--background: url('../../assets/prizeInactive.svg')
+	--color: var(--shark-col)
 
 .PrizeItem
-  display: flex
+	width: 100%
+	height: 40px
+	background-image: var(--background)
+	background-size: contain
+	background-repeat: no-repeat
+	text-align: center
+	padding: 8px 0 0 0
 
-  .content
-    width: 240px
-    padding: 8px 24px
-    border-radius: 8px
-    position: relative
-    z-index: 99
-    text-align: left
-    line-height: 30px
-    filter: drop-shadow(1px 1px 0px var(--color)) drop-shadow(-1px 1px 0px var(--color)) drop-shadow(-1px -1px 0px var(--color)) drop-shadow(1px -1px 0px var(--color))
-    transition: 1s
-    background-color: var(--bg-color)
-    text-align: center
 
-    span
-      font-size: 20px
-      color: var(--font-color)
-
-    &:before
-      content: ''
-      width: 0px
-      height: 40px
-      position: absolute
-      border-style: solid
-      border-width: 23px 13px 23px 0
-      border-color: transparent var(--bg-color) transparent transparent
-      margin-left: -100px
-      margin-top: -8px
-      transition: 1s
-
-    &:after
-      content: ''
-      width: 0
-      height: 40px
-      position: absolute
-      border-style: solid
-      border-width: 23px 0 23px 13px
-      border-color: transparent transparent transparent var(--bg-color)
-      margin-left: 87px
-      margin-top: -8px
-      transition: 1s
-
-  .decoration
-    width: 333px
-    height: 2px
-    background: var(--color)
-    position: absolute
-    margin-left: -47px
-    z-index: 1
-    align-self: center
-    transition: 1s
+	span
+		font-size: 20px
+		color: var(--color)
