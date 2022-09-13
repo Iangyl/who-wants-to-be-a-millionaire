@@ -16,15 +16,7 @@
 			grid-template-columns: repeat(2, 422px)
 			column-gap: 80px
 			row-gap: 32px
-	.aside
-		width: 376px
-		background-color: white
-		height: 100vh
-		padding-top: 12%
-		ul
-			display: flex
-			flex-direction: column
-			gap: 8px
+
 	@media screen and (max-width: 2560px)
 		.content
 			.answers
@@ -43,3 +35,21 @@
 			margin-left: 20px
 			.answers
 				grid-template-columns: 1fr
+	@media screen and (max-width: 768px)
+		.content
+			width: 100%
+			margin-left: 10px
+			margin-right: 10px
+			.answers
+				grid-template-columns: 1fr
+
+@keyframes slideIn
+	0%
+		width: 0%
+		// transform: scale(.3);
+		opacity: 0
+
+	100%
+		width: 50%
+		// transform:scale(1);
+		opacity: 1
