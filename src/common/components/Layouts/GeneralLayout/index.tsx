@@ -4,20 +4,24 @@ import styles from './index.module.sass';
 import { IGeneralLayout } from './index.types';
 import FistWithBigFinger from 'common/assets/FistWithBigFinger';
 import GeneralButton from 'common/components/GeneralButton';
+import useWindowSize from 'common/modules/hooks/useWindowSize';
 
 const GeneralLayout: React.FC<IGeneralLayout> = ({
   title,
   layoutType,
-  score,
-  gameStatus,
   buttonOptions,
 }) => {
+  const windowSize = useWindowSize();
   return (
     <div className={classNames(styles[layoutType], styles.canvas)}>
       <div className="wrapper">
         <div className={styles.container}>
           <div className={styles.left}>
-            <FistWithBigFinger />
+            {windowSize.width <= 425 ? (
+              <FistWithBigFinger width={288} height={192} />
+            ) : (
+              <FistWithBigFinger />
+            )}
           </div>
           <div className={styles.right}>
             <div className={styles.text}>
