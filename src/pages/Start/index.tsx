@@ -1,11 +1,12 @@
 import React from 'react';
+import AppRoutes from 'common/modules/routes';
 import { useNavigate } from 'react-router-dom';
 import GeneralLayout from 'common/components/Layouts/GeneralLayout';
-import AppRoutes from 'common/modules/routes';
+
+const title = 'Who wants to be a millionaire?';
 
 function Start() {
   const navigate = useNavigate();
-  const title = 'Who wants to be a millionaire?';
 
   const handleClick = () => {
     navigate(AppRoutes.GAME_PAGE);
