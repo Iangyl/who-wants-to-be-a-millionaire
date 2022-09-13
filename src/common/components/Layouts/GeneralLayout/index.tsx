@@ -22,7 +22,7 @@ const GeneralLayout: React.FC<IGeneralLayout> = ({
           <div className={styles.right}>
             <div className={styles.text}>
               {layoutType === 'end' && (
-                <h1 className={styles.label}>Total Score: {score}</h1>
+                <h1 className={styles.label}>Total Score:</h1>
               )}
               <div className={styles.title}>{title}</div>
             </div>
