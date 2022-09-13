@@ -7,14 +7,20 @@ import styles from './index.module.sass';
 const AnswerButton: React.FC<IAnswerButton> = ({
   value,
   letterId,
+  isCorrect,
   onClick,
 }) => {
-  const status = 'inactive';
+  const [status, setStatus] = React.useState('inactive');
+
+  const handleClick = () => {
+    onClick(isCorrect);
+    setStatus(isCorrect ? 'correct' : 'incorrect');
+  };
   return (
     <button
       type="button"
       className={classNames(styles[status], styles.AnswerButton)}
-      onClick={() => onClick(letterId)}
+      onClick={handleClick}
     >
       <span>{letterId}</span>
       <span>{value}</span>

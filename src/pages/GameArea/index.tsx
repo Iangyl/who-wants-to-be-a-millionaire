@@ -37,9 +37,10 @@ function GameArea() {
       {state?.currentQuestion?.answers?.map((answer: Answer) => (
         <AnswerButton
           key={answer?.value}
+          isCorrect={answer?.isCorrect}
           letterId={answer?.letterId}
           value={answer?.value}
-          onClick={() => handleClick(answer?.isCorrect)}
+          onClick={handleClick}
         />
       )) ?? <LottieAnimation />}
     </GameLayout>
